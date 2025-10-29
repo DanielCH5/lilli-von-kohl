@@ -1,5 +1,5 @@
 # Lilli Von Kohl - Afsluttende eksamensprojekt for Amar Al Hassan & Daniel Hansen
-(/img/lvk-logo.avif)
+(/blob/main/img/lvk-logo.avif)
 ## Layout
 
 ### Test grid layout
