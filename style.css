@@ -90,6 +90,8 @@ h6 {
 
   /* Padding variables */
   --padding-width-inner: 7.5%;
+  --section-padding: 0 80px 20px 80px;
+  --padding-general: 80px;
 }
 h1 {
   font-size: var(--h1);
@@ -118,17 +120,29 @@ small {
 
 body {
   background-color: var(--creme-hvid);
-  padding: 0 80px;
 }
 
 .red {
   color: var(--red);
 }
 
+.green {
+  color: var(--green);
+}
+
+.yellow {
+  color: var(--gulorange);
+}
+
+.green-bg {
+  background-color: var(--green);
+}
+
 .index-header {
   width: 100%;
   height: 100dvh;
   margin-bottom: var(--padding-width-inner);
+  padding: 0 var(--padding-general);
 }
 
 .nav-bar {
@@ -155,5 +169,38 @@ body {
     width: 100%;
     background-color: grey;
     transform: rotate(5deg);
+  }
+}
+
+.index-section {
+  display: flex;
+  flex-direction: column;
+  padding: var(--section-padding);
+
+  & .section-container {
+    display: flex;
+    gap: var(--h2);
+    padding: var(--padding-width-inner);
+    align-items: center;
+
+    & .container-text-item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+
+    & .container-img {
+      width: 100%;
+      background-color: #fff;
+      height: 400px;
+
+      &.right-rotate {
+        transform: rotate(5deg);
+      }
+      &.left-rotate {
+        transform: rotate(-5deg);
+      }
+    }
   }
 }
