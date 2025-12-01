@@ -181,7 +181,9 @@ body {
     gap: var(--h2);
     padding: var(--padding-width-inner);
     align-items: center;
-
+    &.grid-container{
+      justify-content: center;
+    }
     & .container-text-item {
       display: flex;
       flex-direction: column;
@@ -232,7 +234,7 @@ body {
   top: -400px;
   left: 65%;
   transform: translateX(-50%) scale(0.95);
-  width: 400px;
+  width: 600px;
   border: 10px solid #fff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
   opacity: 0;

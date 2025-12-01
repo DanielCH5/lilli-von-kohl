@@ -23,10 +23,10 @@
           <img src="/img/lvk-logo-green.svg" alt="Lilli von Kohl logo" />
         </div>
         <div class="header-slideshow">
-          <img class="drop-image" src="/img/lilli-bar.JPG" alt="" />
-          <img class="drop-image" src="/img/lilli-bar.JPG" alt="" />
-          <img class="drop-image" src="/img/lilli-bar.JPG" alt="" />
-          <img class="drop-image" src="/img/lilli-bar.JPG" alt="" />
+          <img class="drop-image" src="/img/test.jpg" alt="" />
+          <img class="drop-image" src="/img/test2.jpg" alt="" />
+          <img class="drop-image" src="/img/test.jpg" alt="" />
+          <img class="drop-image" src="/img/test2.jpg" alt="" />
         </div>
       </div>
     </header>
@@ -70,7 +70,7 @@
         </div>
       </div>
 
-      <div class="section-container">
+      <div class="section-container grid-container">
         <div class="gallery-grid">
           <div class="gallery-item">
             <img src="img/lilli-bar.JPG" alt="" />
@@ -113,7 +113,16 @@
         index++;
       }
 
-      const dropTimer = setInterval(dropNext, 700);
+      setTimeout(dropNext, 700);
+
+      // Remaining images drop every 2000ms after the first
+      const dropTimer = setInterval(() => {
+        if (index < images.length) {
+          dropNext();
+        } else {
+          clearInterval(dropTimer);
+        }
+      }, 1500);
     </script>
   </body>
 </html>
