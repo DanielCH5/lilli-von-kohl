@@ -192,7 +192,8 @@ body {
 
     & .container-img {
       width: 100%;
-      background-color: #fff;
+      background-color: grey;
+      border: 10px solid #fff;
       height: 400px;
 
       &.right-rotate {
