@@ -22,7 +22,12 @@
         <div class="logo-holder">
           <img src="/img/lvk-logo-green.svg" alt="Lilli von Kohl logo" />
         </div>
-        <div class="header-slideshow">s</div>
+        <div class="header-slideshow">
+          <img class="drop-image" src="/img/lilli-bar.JPG" alt="" />
+          <img class="drop-image" src="/img/lilli-bar.JPG" alt="" />
+          <img class="drop-image" src="/img/lilli-bar.JPG" alt="" />
+          <img class="drop-image" src="/img/lilli-bar.JPG" alt="" />
+        </div>
       </div>
     </header>
 
@@ -88,5 +93,27 @@
         </div>
       </div>
     </section>
+
+    <script>
+      const images = document.querySelectorAll(".drop-image");
+      let index = 0;
+
+      images.forEach((img, i) => {
+        const rot = (Math.random() * 10 - 5).toFixed(2);
+        img.style.setProperty("--rot", rot + "deg");
+        img.style.zIndex = i;
+      });
+
+      function dropNext() {
+        if (index >= images.length) {
+          clearInterval(dropTimer);
+          return;
+        }
+        images[index].classList.add("land");
+        index++;
+      }
+
+      const dropTimer = setInterval(dropNext, 700);
+    </script>
   </body>
 </html>
