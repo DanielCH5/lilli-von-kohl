@@ -167,7 +167,6 @@ body {
   }
   & .header-slideshow {
     width: 100%;
-    
   }
 }
 
@@ -181,7 +180,7 @@ body {
     gap: var(--h2);
     padding: var(--padding-width-inner);
     align-items: center;
-    &.grid-container{
+    &.grid-container {
       justify-content: center;
     }
     & .container-text-item {
@@ -193,10 +192,29 @@ body {
 
     & .container-img {
       width: 100%;
-      background-color: grey;
-      border: 10px solid #fff;
       height: 400px;
-
+      position: relative;
+      & .img-border {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        object-fit: cover;
+        border: 10px solid #fff;
+      }
+      & .guitar {
+        transform: rotate(5deg);
+        position: absolute;
+        left: -150px;
+        bottom: -50px;
+      }
+      & .dice {
+        transform: rotate(-15deg);
+        position: absolute;
+        right: -100px;
+        bottom: -50px;
+      }
       &.right-rotate {
         transform: rotate(5deg);
       }
