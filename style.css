@@ -133,7 +133,12 @@ body {
 .yellow {
   color: var(--gulorange);
 }
-
+.white {
+  color: var(--creme-hvid);
+}
+.pure-white {
+  color: #fff;
+}
 .green-bg {
   background-color: var(--green);
 }
@@ -199,7 +204,6 @@ body {
     & .nav-item4 {
       position: relative;
       left: -70px;
-
     }
   }
 }
@@ -355,8 +359,21 @@ body {
 footer {
   display: flex;
   padding: 108px 80px;
-  flex-direction: column;
   align-items: flex-start;
   background-color: var(--green);
   gap: 24px;
+  & .footer-rows {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+  }
+  & .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+  }
 }
