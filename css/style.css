@@ -173,7 +173,7 @@ body {
   & .section-container {
     display: flex;
     gap: var(--h2);
-    padding: var(--padding-width-inner);
+    padding: 80px var(--padding-width-inner);
     align-items: center;
     &.grid-container {
       justify-content: center;
