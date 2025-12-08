@@ -149,9 +149,9 @@ body {
   padding: 0 var(--padding-general);
 }
 
-.nav-items .nav-item1 { --nav-rot: 6deg; --top: 15px; --margin: 0 35px; }
+.nav-items .nav-item1 { --nav-rot: -6deg; --top: 15px; --margin: 0 35px; }
 .nav-items .nav-item2 { --nav-rot: 0deg; --top: 10px; --margin: 0 35px; }
-.nav-items .nav-item3 { --nav-rot: -5deg; --top: 20px; --margin: 0 35px;}
+.nav-items .nav-item3 { --nav-rot: 5deg; --top: 20px; --margin: 0 35px;}
 .nav-items .nav-item4 { --nav-rot: 0deg; --top: 10px; --margin: 0 35px;}
 @keyframes floating {
   0% {
@@ -160,12 +160,20 @@ body {
 
   50% {
     transform: translateY(var(--top));
-    margin: var(--margin);
   }
   
   100% {
     transform: translateY(0px);
     
+  }
+}
+
+@keyframes spreading {
+  from {
+    margin: 0px;
+  }
+  to {
+    margin: var(--margin);
   }
 }
 
@@ -204,7 +212,7 @@ body {
       &:hover {
         background-color: var(--green);
         z-index: 5;
-        animation: floating 3s ease-in-out infinite;
+        animation: floating 3s ease-in-out infinite, spreading 1s ease-in-out forwards;
         & a {
           color: var(--creme-hvid);
         }
