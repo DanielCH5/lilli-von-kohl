@@ -24,9 +24,9 @@
   50% {
     transform: translateY(var(--top)) rotate(var(--nav-rot));
   }
-
+  
   100% {
-    transform: translateY(0px) rotate(var(--nav-rot));
+    transform: translateY(var(--top)) rotate(var(--nav-rot));
   }
 }
 .nav-bar {
@@ -63,7 +63,7 @@
       &:hover {
         background-color: var(--green);
         z-index: 5;
-        animation: floating 1s ease-in-out infinite;
+        animation: floating 0.6s ease-in-out forwards;
         & a {
           color: var(--creme-hvid);
           padding: 26px 50px;

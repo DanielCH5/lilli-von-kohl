@@ -89,7 +89,7 @@ h6 {
   --small: calc(1rem / 1.333);
 
   /* Padding variables */
-  --padding-width-inner: 7.5%;
+  --padding-width-inner: 10%;
   --section-padding: 0 80px 20px 80px;
   --padding-general: 80px;
 }
