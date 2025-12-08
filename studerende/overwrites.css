@@ -1,0 +1,14 @@
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 var(--padding-width-inner) 0;
+  height: 80%;
+}
+.section-headers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & .section-text {
+    max-width: 85%;
+  }
+}
