@@ -12,3 +12,10 @@
     max-width: 85%;
   }
 }
+
+.polaroid-section {
+  margin-top: 80px;
+  &.section-container {
+    gap: 0px;
+  }
+}
