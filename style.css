@@ -149,22 +149,33 @@ body {
   padding: 0 var(--padding-general);
 }
 
-.nav-items .nav-item1 { --nav-rot: -6deg; --top: 15px; --margin: 0 35px; }
-.nav-items .nav-item2 { --nav-rot: 0deg; --top: 10px; --margin: 0 35px; }
-.nav-items .nav-item3 { --nav-rot: 5deg; --top: 20px; --margin: 0 35px;}
-.nav-items .nav-item4 { --nav-rot: 0deg; --top: 10px; --margin: 0 35px;}
+.nav-items .nav-item1 {
+  --nav-rot: -6deg;
+  --top: 15px;
+}
+.nav-items .nav-item2 {
+  --nav-rot: 0deg;
+  --top: -20px;
+}
+.nav-items .nav-item3 {
+  --nav-rot: 5deg;
+  --top: 20px;
+}
+.nav-items .nav-item4 {
+  --nav-rot: 0deg;
+  --top: -20px;
+}
 @keyframes floating {
   0% {
-    transform: translateY(0px);
+    transform: translateY(0px) rotate(var(--nav-rot));
   }
 
   50% {
-    transform: translateY(var(--top));
+    transform: translateY(var(--top)) rotate(var(--nav-rot));
   }
-  
+
   100% {
-    transform: translateY(0px);
-    
+    transform: translateY(0px) rotate(var(--nav-rot));
   }
 }
 
@@ -177,7 +188,6 @@ body {
   }
 }
 
-
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -187,6 +197,13 @@ body {
   & .nav-items {
     display: flex;
     list-style-type: none;
+    --margin: 0;
+
+    &:hover {
+      --margin: 0 20px;
+      & > * {
+      }
+    }
     & .nav-item1,
     .nav-item2,
     .nav-item3,
@@ -212,7 +229,7 @@ body {
       &:hover {
         background-color: var(--green);
         z-index: 5;
-        animation: floating 3s ease-in-out infinite, spreading 1s ease-in-out forwards;
+        animation: floating 2s ease-in-out infinite;
         & a {
           color: var(--creme-hvid);
         }
