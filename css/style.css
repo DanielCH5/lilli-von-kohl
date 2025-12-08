@@ -70,7 +70,9 @@ h6 {
 }
 
 /* End of reset CSS */
-
+.test {
+  background: url(/img/lilli-bar.JPG) lightgray 50% / cover no-repeat;
+}
 :root {
   /* Color Palette */
   --creme-hvid: #f2dfd8;
