@@ -229,7 +229,7 @@ body {
       &:hover {
         background-color: var(--green);
         z-index: 5;
-        animation: floating 2s ease-in-out infinite;
+        animation: floating 1s ease-in-out infinite;
         & a {
           color: var(--creme-hvid);
           padding: 26px 50px;
