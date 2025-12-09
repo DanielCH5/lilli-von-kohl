@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 .polaroid {
   --rotleft: -10deg;
   --rotright: 4deg;
@@ -36,6 +35,30 @@
 }
 
 .polaroid-double {
-    display: flex;
-    gap: 0px;
+  display: flex;
+  gap: 0px;
+}
+
+.dashed-box {
+  display: flex;
+  transform: rotate(2.06deg);
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px dashed var(--red);
+  color: var(--red);
+  font-family: "Truculenta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  & .box-header {
+    font-size: var(--h4);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  & .box-text {
+    font-size: var(--h6);
+    text-align: center;
+  }
 }
