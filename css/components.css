@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 .polaroid {
   --rotleft: -10deg;
   --rotright: 4deg;
@@ -10,19 +11,23 @@
   align-items: center;
   box-shadow: -5px 3px 4px 0 rgba(0, 0, 0, 0.25);
   background: #cfcfd2;
+
   &.polaroid--rot-right {
     transform: rotate(var(--rotright));
   }
+
   &.polaroid--rot-left {
     transform: rotate(var(--rotleft));
     position: relative;
     left: -80px;
     top: -30px;
   }
+
   & .polaroid-img {
     width: 100%;
     height: 80%;
   }
+
   & .polaroid-text {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
@@ -36,67 +41,82 @@
 }
 
 .polaroid-double {
-    display: flex;
-    gap: 0px;
-}
-
-.event-card{
   display: flex;
-width: 480px;
-padding: 104px 58px;
-flex-direction: column;
-align-items: center;
-gap: 14px;
-
-& .event-date {
-  font-size: var(--h5);
+  gap: 0px;
 }
 
-&.event-card-red{
-  background: var(--red, #761A24);
-  color: var(--creme-hvid);
-  & .event-date{
-    color: var(--gulorange);
+.event-card {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+
+  &.event-card-big {
+    width: 480px;
+    padding: 104px 58px;
   }
-}
 
-&.event-card-yellow{
-  background: var(--gulorange);
-  color: var(--creme-hvid);
-  & .event-date{
+  &.event-card-small {
+    width: 480px;
+    padding: 40px;
+  }
+
+  & .event-date {
+    font-size: var(--h5);
+  }
+
+  &.event-card-red {
+    background: var(--red, #761A24);
+    color: var(--creme-hvid);
+
+    & .event-date {
+      color: var(--gulorange);
+    }
+  }
+
+  &.event-card-yellow {
+    background: var(--gulorange);
+    color: var(--creme-hvid);
+
+    & .event-date {
+      color: var(--green);
+    }
+  }
+
+  &.event-card-turkis {
+    background: var(--turkis);
+    color: var(--creme-hvid);
+
+    & .event-date {
+      color: var(--darkblue);
+    }
+  }
+
+  &.event-card-creme {
+    background: var(--creme-hvid);
     color: var(--green);
-  }
-}
 
-&.event-card-turkis{
-  background: var(--turkis);
-  color: var(--creme-hvid);
-  & .event-date{
-    color: var(--darkblue);
+    & .event-date {
+      color: var(--gulorange);
+    }
   }
-}
 
-&.event-card-creme{
-  background: var(--creme-hvid);
-  color: var(--green);
-  & .event-date{
-    color: var(--gulorange);
-  }
-}
+  &.event-card-blue {
+    background: var(--darkblue);
+    color: var(--creme-hvid);
 
-&.event-card-blue{
-  background: var(--darkblue);
-  color: var(--creme-hvid);
-  & .event-date{
-    color: var(--gulorange);
+    & .event-date {
+      color: var(--gulorange);
+    }
   }
-}
 
-&.event-card-green{
-  background: var(--green);
-  color: var(--creme-hvid);
-  & .event-date{
-    color: var(--gulorange);
+  &.event-card-green {
+    background: var(--green);
+    color: var(--creme-hvid);
+
+    & .event-date {
+      color: var(--gulorange);
+    }
   }
-}
 }
