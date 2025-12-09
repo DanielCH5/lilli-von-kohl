@@ -39,3 +39,18 @@
     display: flex;
     gap: 0px;
 }
+
+.event-card{
+  display: flex;
+width: 480px;
+padding: 104px 58px;
+flex-direction: column;
+align-items: center;
+gap: 14px;
+background: var(--red, #761A24);
+
+& .event-date {
+  font-size: var(--h5);
+}
+
+}
