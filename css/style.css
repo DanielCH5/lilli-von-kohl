@@ -81,6 +81,7 @@ h6 {
   --gulorange: #e09b3e;
   --turkis: #3fa693;
   --darkblue: #171c2f;
+  --hvid: #ffffff;
   /* Typography Scale */
   --h1: calc(1rem * 1.333 * 1.333 * 1.333 * 1.333 * 1.333 * 1.333);
   --h2: calc(1rem * 1.333 * 1.333 * 1.333 * 1.333 * 1.333);
@@ -122,6 +123,9 @@ small {
 
 body {
   background-color: var(--creme-hvid);
+  font-family: "segoe-ui", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .red {
@@ -165,6 +169,7 @@ body {
   }
   & .header-slideshow {
     width: 100%;
+    position:relative;
   }
 }
 
@@ -256,7 +261,7 @@ body {
   top: -400px;
   left: 65%;
   transform: translateX(-50%) scale(0.95);
-  width: 600px;
+  width: 100%;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: top 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.6s ease,

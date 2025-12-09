@@ -36,6 +36,7 @@
   list-style-type: none;
   padding: 36px var(--padding-width-inner);
   background: url(/img/nav-bg-second.svg);
+  height: 20%;
   & .nav-logo {
     width: 120px;
     height: auto;
@@ -43,20 +44,21 @@
   & .nav-items {
     display: flex;
     list-style-type: none;
+    font-weight: 600;
     & .nav-item1,
     .nav-item2,
     .nav-item3,
     .nav-item4 {
-      border: 4px solid var(--green);
+      border: 4px solid var(--turkis);
       padding: 6px;
       width: 164px;
       text-align: center;
       border-radius: 24px;
-      background-color: var(--creme-hvid);
+      background-color: var(--hvid);
       & a {
         color: var(--green);
         text-decoration: none;
-        padding: 6px 50px;
+        padding: 6px 30px;
       }
       &.active {
         background-color: var(--green);
@@ -71,7 +73,7 @@
         animation: floating 0.6s ease-in-out forwards;
         & a {
           color: var(--creme-hvid);
-          padding: 26px 50px;
+          padding: 26px 30px;
         }
       }
     }
