@@ -35,7 +35,7 @@
   align-items: center;
   list-style-type: none;
   padding: 36px var(--padding-width-inner);
-  background: url(/img/nav-bg-second.svg);
+  background: url(/img/nav-bg-first.svg);
   height: 20%;
   & .nav-logo {
     width: 120px;
