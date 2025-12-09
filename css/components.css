@@ -47,10 +47,56 @@ padding: 104px 58px;
 flex-direction: column;
 align-items: center;
 gap: 14px;
-background: var(--red, #761A24);
 
 & .event-date {
   font-size: var(--h5);
 }
 
+&.event-card-red{
+  background: var(--red, #761A24);
+  color: var(--creme-hvid);
+  & .event-date{
+    color: var(--gulorange);
+  }
+}
+
+&.event-card-yellow{
+  background: var(--gulorange);
+  color: var(--creme-hvid);
+  & .event-date{
+    color: var(--green);
+  }
+}
+
+&.event-card-turkis{
+  background: var(--turkis);
+  color: var(--creme-hvid);
+  & .event-date{
+    color: var(--darkblue);
+  }
+}
+
+&.event-card-creme{
+  background: var(--creme-hvid);
+  color: var(--green);
+  & .event-date{
+    color: var(--gulorange);
+  }
+}
+
+&.event-card-blue{
+  background: var(--darkblue);
+  color: var(--creme-hvid);
+  & .event-date{
+    color: var(--gulorange);
+  }
+}
+
+&.event-card-green{
+  background: var(--green);
+  color: var(--creme-hvid);
+  & .event-date{
+    color: var(--gulorange);
+  }
+}
 }
