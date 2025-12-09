@@ -34,7 +34,12 @@
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  padding: 36px 36px;
+  padding: 36px var(--padding-width-inner);
+  background: url(/img/nav-bg-second.svg);
+  & .nav-logo {
+    width: 120px;
+    height: auto;
+  }
   & .nav-items {
     display: flex;
     list-style-type: none;
