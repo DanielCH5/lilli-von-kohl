@@ -53,12 +53,12 @@
   gap: 14px;
 
   &.event-card-big {
-    width: 480px;
+    width: 100%;
     padding: 104px 58px;
   }
 
   &.event-card-small {
-    width: 480px;
+    width: 100%;
     padding: 40px;
   }
 
