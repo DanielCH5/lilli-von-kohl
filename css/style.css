@@ -151,7 +151,6 @@ body {
 
 .index-header {
   width: 100%;
-  height: 100dvh;
 }
 
 .page-header {
@@ -221,10 +220,11 @@ body {
         bottom: -50px;
       }
       & .dice {
-        transform: rotate(-15deg);
+        transform: rotate(-15deg) ;
+        
         position: absolute;
         right: -100px;
-        bottom: -50px;
+        top: -30px;
       }
       &.right-rotate {
         transform: rotate(5deg);
@@ -315,7 +315,18 @@ body {
   height: 400px;
   background-color: var(--green);
 }
+.green-paper-bg {
+  background: url(/img/ripped-edge-green.png) 0% 0% repeat;
+  height: 100px;
+  &.rotated {
+    transform: rotate(-180deg);
+  }
+}
 
+.table-wrap {
+  background: url(/img/table-wrap.svg) 0% 100% / cover;
+  padding-bottom: 60px
+}
 footer {
   display: flex;
   padding: 108px 80px;

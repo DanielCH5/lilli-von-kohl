@@ -1,7 +1,7 @@
 .page-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 var(--padding-width-inner) 0;
+  padding: 60px var(--padding-width-inner) ;
   height: 80%;
 }
 .section-headers {
