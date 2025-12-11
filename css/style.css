@@ -244,9 +244,11 @@ body {
 }
 .gallery-grid {
   display: grid;
-  grid-template-rows: 322.67px 322.67px;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: 48px;
+  column-gap: 80px;
+  width: 100%;
+  row-gap: 80px;
   & .gallery-item {
     background-color: #ccc;
     width: 322.67px;

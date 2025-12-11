@@ -1,0 +1,9 @@
+.polaroid {
+    width: 100%;
+    &.polaroid--rot-left {
+    transform: rotate(var(--rotleft));
+    position: relative;
+    left: 0px;
+    top: 0px;
+    }
+}
