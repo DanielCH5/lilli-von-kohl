@@ -99,6 +99,35 @@
     }
   }
 }
+.folkebar-frame {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+  
+  & .frame-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  & .frame-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-7deg);
+    color: var(--darkblue);
+    text-align: center;
+    pointer-events: none;
+    font-family: "Lobster", sans-serif;
+
+    & > * {
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+}
+
 .dashed-box {
   display: flex;
   transform: rotate(2.06deg);
