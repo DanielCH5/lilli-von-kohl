@@ -19,5 +19,24 @@
     gap: 0px;
   }
 }
+@media (max-width: 1000px) {
+    .polaroid-section {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+@media (max-width: 768px) {
+  .page-header {
+    grid-template-columns: 1fr;
+    padding: 40px var(--padding-width-inner);
+    margin: 0 var(--padding-general);
+    height: auto;
 
+    & .event-img {
+      order: -1;
+      transform: rotate(0deg);
+      margin-bottom: 1rem;
+    }
+  } 
+}
 

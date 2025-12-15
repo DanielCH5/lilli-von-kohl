@@ -13,6 +13,7 @@
 .title {
   padding: var(--padding-general);
   text-align: center;
+  color: var(--green);
 }
 .event-img {
   transform: rotate(3deg);

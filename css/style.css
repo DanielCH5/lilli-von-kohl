@@ -148,6 +148,9 @@ body {
 .green-bg {
   background-color: var(--green);
 }
+.darkblue-bg {
+  background-color: var(--darkblue);
+}
 
 .index-header {
   width: 100%;
@@ -361,6 +364,12 @@ footer {
     --section-padding: 0 20px 20px 20px;
     --padding-general: 0;
   }
+
+  .index-section .section-container .container-img .dice  {
+      width: 150px;
+      right: 0;
+
+  }
 }
 @media (max-width: 768px) {
   :root {
@@ -374,9 +383,7 @@ footer {
     flex-direction: column;
     align-items: center;
     & .container-img .dice {
-      right: 0;
       bottom: -50px;
-      width: 150px;
     }
   }
   .page-header {

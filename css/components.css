@@ -38,7 +38,15 @@
   display: flex;
   gap: 0px;
 }
-
+@media (max-width: 1000px) {
+  .polaroid-double{
+    flex-direction: column;
+    gap: 1rem;
+    & .polaroid.polaroid--rot-left{
+      left: 0;
+    }
+  }
+}
 .event-card {
   display: flex;
   width: 480px;
