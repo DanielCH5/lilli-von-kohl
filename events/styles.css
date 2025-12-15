@@ -44,7 +44,7 @@
   }
 }
 @media (max-width: 768px) {
-  .page-header {
+  .page-header.event-header {
     grid-template-columns: 1fr;
     padding: 40px var(--padding-width-inner);
     margin: 0 var(--padding-general);
@@ -55,6 +55,10 @@
       transform: rotate(0deg);
       margin-bottom: 1rem;
     }
+  }
+
+  .event-display {
+    flex-direction: column;
   }
 
  
