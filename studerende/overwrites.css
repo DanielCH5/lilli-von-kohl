@@ -11,25 +11,33 @@
   & .section-text {
     max-width: 85%;
   }
+  &.om-os {
+    gap: 24px;
+  }
 }
 
 .polaroid-section {
   margin-top: 80px;
   &.section-container {
     gap: 0px;
+
+    &.lilli-historie {
+      gap: 2rem;
+      margin-top: 0px;
+    }
   }
 }
 @media (max-width: 1000px) {
-    .polaroid-section {
-      flex-direction: column;
-      align-items: center;
-    }
+  .polaroid-section {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 768px) {
   .page-header {
     grid-template-columns: 1fr;
     padding: 40px var(--padding-width-inner);
-    margin: 0 var(--padding-general);
+    margin: 0 var(--padding-width-inner);
     height: auto;
 
     & .event-img {
@@ -37,6 +45,5 @@
       transform: rotate(0deg);
       margin-bottom: 1rem;
     }
-  } 
+  }
 }
-

@@ -1,0 +1,15 @@
+.section-container.lilli-historie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0px;
+
+    & .logo-holder {
+        transform: rotate(-3deg);
+    }
+}
+
+@media (max-width: 1000px) {
+    .section-container.lilli-historie {
+    display: flex;
+}
+}

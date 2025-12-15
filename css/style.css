@@ -153,6 +153,9 @@ body {
 .darkblue-bg {
   background-color: var(--darkblue);
 }
+.red-bg {
+  background-color: var(--red);
+}
 
 .index-header {
   width: 100%;
@@ -246,6 +249,7 @@ body {
     text-align: center;
     padding: var(--padding-width-inner);
   }
+
 }
 
 
@@ -332,6 +336,18 @@ body {
 .table-wrap {
   background: url(/img/table-wrap.svg) 0% 100% / cover;
   padding-bottom: 60px;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  & > a {
+    padding: 1rem;
+  }
+
+  & img {
+    width: 40px;
+  }
 }
 footer {
   display: flex;

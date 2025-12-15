@@ -17,6 +17,7 @@
 }
 .event-img {
   transform: rotate(3deg);
+  padding-top: 10%;
 }
 
 .event-knap-container {
@@ -43,6 +44,12 @@
     padding: 1rem;
   }
 }
+@media (max-width: 1060px) {
+   .event-display {
+    flex-direction: column;
+  }
+
+}
 @media (max-width: 768px) {
   .page-header.event-header {
     grid-template-columns: 1fr;
@@ -57,9 +64,6 @@
     }
   }
 
-  .event-display {
-    flex-direction: column;
-  }
 
  
 }
