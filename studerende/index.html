@@ -48,11 +48,20 @@
             >
           </li>
         </ul>
-        <button>Test</button>
+        <button onclick="toggleMenu()">Test</button>
+      </nav>
+      <nav class="mobile-nav">
+        <a onclick="toggleMenu()" class="close-button">X</a>
+        <ul>
+          <li><a href="/om/">About</a></li>
+          <li><a href="/events/">Events</a></li>
+          <li><a href="/studerende/">Students</a></li>
+          <li><a href="/kontakt/">Contact</a></li>
+        </ul>
       </nav>
 
       <section class="page-header">
-        <div class="section-headers">
+        <div class="section-headers darkblue">
           <h2 class="section-title">Student discount</h2>
           <p class="section-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -135,5 +144,6 @@
         <p><a href="" target="_blank" rel="noopener">Facebook</a></p>
       </div>
     </footer>
+    <script src="/menu.js"></script>
   </body>
 </html>

@@ -135,7 +135,9 @@ body {
 .green {
   color: var(--green);
 }
-
+.darkblue {
+  color: var(--darkblue);
+}
 .yellow {
   color: var(--gulorange);
 }
