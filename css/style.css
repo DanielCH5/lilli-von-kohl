@@ -241,11 +241,9 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-}
+
 .gallery-grid {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 80px;
   width: 100%;
@@ -347,6 +345,14 @@ footer {
     align-items: flex-start;
     gap: 12px;
     flex: 1 0 0;
+  }
+
+  & .header {
+    font-weight: 700;
+  }
+
+  & a {
+    color: inherit;
   }
 }
 

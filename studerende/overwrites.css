@@ -1,7 +1,7 @@
 .page-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 60px var(--padding-width-inner) ;
+  padding: 60px var(--padding-width-inner);
   height: 80%;
 }
 .section-headers {
@@ -19,3 +19,5 @@
     gap: 0px;
   }
 }
+
+
