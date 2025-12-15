@@ -43,6 +43,7 @@
   & .nav-items {
     display: flex;
     list-style-type: none;
+    font-size: var(--h6);
     font-weight: 600;
     & .nav-item1,
     .nav-item2,
@@ -102,5 +103,11 @@
       position: relative;
       left: -70px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+ .nav-bar .nav-items {
+    display: none;
   }
 }
