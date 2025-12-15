@@ -189,7 +189,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: var(--section-padding);
-
+  &.events-section {
+    padding: 0;
+  }
   & .section-container {
     display: flex;
     gap: var(--h2);
@@ -388,6 +390,7 @@ footer {
       bottom: -50px;
     }
   }
+  
   .page-header {
     grid-template-columns: 1fr;
     padding: 40px var(--padding-width-inner);
@@ -423,6 +426,9 @@ footer {
       }
       &.image-fourth {
         z-index: 3;
+      }
+      &.image-fifth {
+        z-index: 4;
       }
 
       &.drop-image--land {

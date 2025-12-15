@@ -39,29 +39,49 @@
   gap: 0px;
 }
 @media (max-width: 1000px) {
-  .polaroid-double{
+  .polaroid-double {
     flex-direction: column;
     gap: 1rem;
-    & .polaroid.polaroid--rot-left{
+    & .polaroid.polaroid--rot-left {
       left: 0;
     }
   }
 }
+.event-wrapper {
+  text-decoration: none;
+  height: 100%;
+}
 .event-card {
   display: flex;
-  width: 480px;
-  padding: 104px 58px;
   flex-direction: column;
   align-items: center;
   gap: 14px;
+  text-align: center;
+  height: 100%;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out, border-radius 0.1s ease-in;
+  &:hover {
+    transform: scale(1.05);
+    border-radius: 24px;
+  }
   &.event-card-big {
     width: 100%;
     padding: 104px 58px;
+
+    & .event-title {
+      font-size: var(--h2);
+      font-weight: 700;
+    }
   }
 
   &.event-card-small {
     width: 100%;
     padding: 40px;
+
+    & .event-title {
+      font-size: var(--h3);
+      font-weight: 600;
+    }
   }
   & .event-date {
     font-size: var(--h5);
