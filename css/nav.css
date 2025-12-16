@@ -51,7 +51,7 @@
       font-weight: 700;
     }
   }
-  & > button {
+  & > .menu-toggler {
     display: none;
   }
   & .nav-logo {
@@ -176,7 +176,7 @@
     display: none;
   }
 
-  .nav-bar > button {
+  .nav-bar > .menu-toggler {
     display: block;
   }
 
