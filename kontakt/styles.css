@@ -1,0 +1,8 @@
+.section-headers.kontakt-os {
+    justify-content: flex-start;
+}
+
+.event-img.kontakt-form{
+    padding: 0;
+    order: 1;
+}

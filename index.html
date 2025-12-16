@@ -60,6 +60,9 @@
           <li><a href="/events/">Events</a></li>
           <li><a href="/studerende/">Students</a></li>
           <li><a href="/kontakt/">Contact</a></li>
+          <div class="socials socials-menu">
+            <a href="https://www.facebook.com/profile.php?id=61575620468349" target="_blank" rel="noopener"><img src="/img/fb-gul.svg" alt=""></a><a href="" ><img src="/img/tt.svg" style="height: 40px;" alt=""></a><a href="https://www.instagram.com/lilli_von_kohl/" target="_blank" rel="noopener"><img src="/img/insta-gul.svg"  alt=""></a>
+          </div>
         </ul>
       </nav>
 
@@ -144,22 +147,23 @@
         <div class="section-container grid-container">
           <div class="gallery-grid">
             <div class="polaroid polaroid--rot-right">
-              <div class="test polaroid-img"></div>
+              <div class="koncert-1 polaroid-img"></div>
               <div class="polaroid-text">
-                <h5>Hygge</h5>
+                <h5>Events</h5>
               </div>
             </div>
             <div class="polaroid">
-              <div class="test polaroid-img"></div>
+              <div class="community-1 polaroid-img"></div>
               <div class="polaroid-text">
-                <h5>Hygge</h5>
+                <h5>Fællesskab</h5>
               </div>
             </div>
 
             <div class="polaroid polaroid--rot-right">
-              <div class="test polaroid-img"></div>
+              <div class="hygge-1 polaroid-img"></div>
               <div class="polaroid-text">
                 <h5>Hygge</h5>
+                <img src="/img/hearts.svg" alt="">
               </div>
             </div>
           </div>
@@ -222,10 +226,40 @@
     <section class="index-section">
       <div class="section-container">
         <div class="form-headers green">
-          <h3>Events hos Lilli</h3>
+          <h3>Dit event på folkebaren</h3>
           <p>Holder du egne events eller har du planer om det?</p>
+          <p>
+            Kontakt os på <a href="mailto:hello@lilli.bar" style="color: var(--green);">hello@lilli.bar</a> eller udfyld formen til højre, så vender vi tilbage snarest
+          </p>
         </div>
-        <div class="form"></div>
+        <div class="form">
+          <form class="form-content" >
+            <h3 class="white">Kontakt os</h3>
+            <div class="form-row">
+              <label for="name">Navn</label>
+              <input id="name" name="name" type="text" required placeholder="Dit navn" />
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Telefon</label>
+              <input id="phone" name="phone" type="tel" pattern="[0-9+()\\s-]{6,}" placeholder="+45 12 34 56 78" />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="din@email.dk" />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Besked</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Skriv din besked..."></textarea>
+            </div>
+
+            <div class="form-row">
+              <button  class="btn-submit">Send</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -257,7 +291,7 @@
         <p class="header">Baren</p>
         <p><a href="">Lilli von Kohl</a></p>
         <p><a href="">Stemning og liv i baren</a></p>
-        <p><a href="">Selskaber</a></p>
+        <p><a href="/kontakt/">Selskaber</a></p>
         <p>
           <a
             href="https://www.instagram.com/lilli_von_kohl/"

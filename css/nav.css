@@ -147,6 +147,14 @@
   height: 100%;
   overflow: hidden;
 }
+
+.socials.socials-menu {
+  display: flex;
+  gap: 1rem;
+  & a {
+    padding: 10px
+  };
+}
 @media (max-width: 1050px) {
   .nav-bar .nav-items {
     display: none;
