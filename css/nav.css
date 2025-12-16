@@ -38,6 +38,9 @@
   background: url(/img/nav-bg-first.svg);
   position: relative;
   z-index: 100;
+  & > button {
+    opacity: 0;
+  }
   & .nav-logo {
     width: 120px;
     height: auto;
@@ -160,4 +163,7 @@
     display: none;
   }
 
+  .nav-bar > button {
+    opacity: 1;
+  }
 }
