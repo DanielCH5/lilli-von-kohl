@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://use.typekit.net/sbw3bxl.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/studerende/overwrites.css" />
+    <link rel="stylesheet" href="/events/styles.css" />
+    <link rel="stylesheet" href="/kontakt/styles.css" />
+    <link rel="shortcut icon" href="/img/Favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="index-header">
+      <nav class="nav-bar">
+        <a href="/en/">
+          <img src="/img/lvk-sticker-no-text.svg" class="nav-logo" alt="" />
+        </a>
+        <ul class="nav-items">
+          <li class="nav-item1">
+            <a
+              href="/en/about/
+            "
+              >About</a
+            >
+          </li>
+          <li class="nav-item2">
+            <a
+              href="/en/events/
+            "
+              >Events</a
+            >
+          </li>
+          <li class="nav-item3">
+            <a href="/en/students/"> Students </a>
+          </li>
+          <li class="nav-item4">
+            <a
+              href="/en/contact/
+            "
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="language-changer">
+          <a href="/"><span class="bold-link">EN</span>/DK</a>
+        </div>
+        <button onclick="toggleMenu()">Test</button>
+      </nav>
+
+      <nav class="mobile-nav">
+        <a onclick="toggleMenu()" class="close-button">X</a>
+        <ul>
+          <li><a href="/en/about/">About</a></li>
+          <li><a href="/en/events/">Events</a></li>
+          <li><a href="/en/students/">Students</a></li>
+          <li><a href="/en/contact/">Contact</a></li>
+          <div class="socials socials-menu">
+            <a
+              href="https://www.facebook.com/profile.php?id=61575620468349"
+              target="_blank"
+              rel="noopener"
+              ><img src="/img/fb-gul.svg" alt="" /></a
+            ><a href=""><img src="/img/tt.svg" style="height: 40px" alt="" /></a
+            ><a
+              href="https://www.instagram.com/lilli_von_kohl/"
+              target="_blank"
+              rel="noopener"
+              ><img src="/img/insta-gul.svg" alt=""
+            /></a>
+          </div>
+        </ul>
+      </nav>
+
+      <section class="page-header">
+        <div class="section-headers kontakt-os darkblue">
+          <h2 class="section-title">Contact us</h2>
+          <p class="section-text">
+            Our bar is not just a place for great drinks and cozy moments — we
+            also offer tailor-made events where we take care of everything.
+            Whether you're planning a party, a corporate event, or a smaller
+            gathering, we're ready to create the right atmosphere and make sure
+            everything runs smoothly. All you need to do is bring the idea —
+            we'll handle the rest.
+          </p>
+          <p class="section-text">
+            Contact us at 
+            <a href="mailto:hello@lilli.bar" style="color: var(--green)"
+              >hello@lilli.bar</a
+            >
+            or fill out the form on the right, and we'll get back to you as soon as possible.
+          </p>
+        </div>
+        <div class="event-img kontakt-form">
+        <div class="form">
+          <form class="form-content">
+            <h3 class="white">Contact us</h3>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                placeholder="Your name"
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Telefon</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                pattern="[0-9+()\\s-]{6,}"
+                placeholder="+45 12 34 56 78"
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="your@email.dk"
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Besked</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+
+            <div class="form-row">
+              <button class="btn-submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </header>
+
+    <footer class="pure-white">
+      <img src="/img/LVK-logo-white.svg" alt="" />
+      <div class="footer-rows">
+        <div class="footer-column">
+          <p class="header">Opening hours</p>
+          <p>Mon - Thurs: 14-23</p>
+          <p>Fri - Sat: 13-01</p>
+          <p>Sun: 13-18</p>
+        </div>
+        <div class="footer-column">
+          <p class="header">Address</p>
+          <p>Kedelpladsen 1</p>
+          <p>1799 København V</p>
+        </div>
+      </div>
+      <div class="footer-column">
+        <p class="header">Contact us</p>
+        <p>E-mail: <a href="mailto:hello@lilli.bar">hello@lilli.bar</a></p>
+      </div>
+      <div class="footer-column">
+        <p class="header">Events</p>
+        <p><a href="/en/events/">Upcoming events</a></p>
+        <p><a href="">Rent Lilli</a></p>
+      </div>
+      <div class="footer-column">
+        <p class="header">The bar</p>
+        <p><a href="/en/about/">Lilli von Kohl</a></p>
+        <p><a href="/en/contact/">Selskaber</a></p>
+        <p>
+          <a
+            href="https://www.instagram.com/lilli_von_kohl/"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://www.facebook.com/profile.php?id=61575620468349"
+            target="_blank"
+            rel="noopener"
+            >Facebook</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="/menu.js"></script>
+  </body>
+</html>

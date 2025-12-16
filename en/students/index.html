@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students</title>
+    <link rel="stylesheet" href="https://use.typekit.net/sbw3bxl.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/studerende/overwrites.css" />
+    <link rel="stylesheet" href="/events/styles.css" />
+    <link rel="shortcut icon" href="/img/Favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="index-header">
+      <nav class="nav-bar">
+        <a href="/en/">
+          <img src="/img/lvk-sticker-no-text.svg" class="nav-logo" alt="" />
+        </a>
+        <ul class="nav-items">
+          <li class="nav-item1">
+            <a
+              href="/en/about/
+            "
+              >About</a
+            >
+          </li>
+          <li class="nav-item2">
+            <a
+              href="/en/events/
+            "
+              >Events</a
+            >
+          </li>
+          <li class="nav-item3">
+            <a href="/en/students/"> Students </a>
+          </li>
+          <li class="nav-item4">
+            <a
+              href="/en/contact/
+            "
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="language-changer">
+          <a href="/"><span class="bold-link">EN</span>/DK</a>
+        </div>
+        <button onclick="toggleMenu()">Test</button>
+      </nav>
+
+      <nav class="mobile-nav">
+        <a onclick="toggleMenu()" class="close-button">X</a>
+        <ul>
+          <li><a href="/en/about/">About</a></li>
+          <li><a href="/en/events/">Events</a></li>
+          <li><a href="/en/students/">Students</a></li>
+          <li><a href="/en/contact/">Contact</a></li>
+          <div class="socials socials-menu">
+            <a
+              href="https://www.facebook.com/profile.php?id=61575620468349"
+              target="_blank"
+              rel="noopener"
+              ><img src="/img/fb-gul.svg" alt="" /></a
+            ><a href=""><img src="/img/tt.svg" style="height: 40px" alt="" /></a
+            ><a
+              href="https://www.instagram.com/lilli_von_kohl/"
+              target="_blank"
+              rel="noopener"
+              ><img src="/img/insta-gul.svg" alt=""
+            /></a>
+          </div>
+        </ul>
+      </nav>
+
+      <section class="page-header">
+        <div class="section-headers darkblue">
+          <h2 class="section-title">For Students</h2>
+          <p class="section-text">
+            At Lilli von Kohl, there's always room for group work after classes,
+            events with your fellow students and friends, or a couple of beers
+            when the campus bar closes. That's why we offer student beers at
+            Lilli von Kohl — get 5 for 100 DKK (with a valid student ID).
+          </p>
+        </div>
+        <div class="section-img">
+          <img src="/img/students-beer.png" alt="" />
+        </div>
+      </section>
+    </header>
+    <section class="index-section darkblue-bg">
+      <div class="section-container polaroid-section">
+        <div class="polaroid-double">
+          <div class="polaroid polaroid--rot-right">
+            <div class="koncert-1 polaroid-img"></div>
+            <div class="polaroid-text">
+              <h5>Concerts</h5>
+            </div>
+          </div>
+          <div class="polaroid polaroid--rot-left">
+            <div class="studerende-1 polaroid-img"></div>
+            <div class="polaroid-text">
+              <h5>Hygge</h5>
+              <img src="/img/hearts.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="container-text-item yellow">
+          <h2 class="section-title">Discounts & Events</h2>
+          <h6 class="section-subtitle">15% off all drinks</h6>
+          <p class="section-text">
+            We know that a student budget doesn't always stretch very far, which
+            is why we offer a 15% student discount.
+          </p>
+          <p class="section-text">
+            At the people's bar, students are also welcome to suggest events and share ideas.
+          </p>
+
+          <p class="section-text" style="margin-top: 12px">
+            <a
+              href="/kontakt/"
+              class="event-knap"
+              style="background-color: var(--green)"
+              >Read more</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="pure-white">
+      <img src="/img/LVK-logo-white.svg" alt="" />
+      <div class="footer-rows">
+        <div class="footer-column">
+          <p class="header">Opening hours</p>
+          <p>Mon - Thurs: 14-23</p>
+          <p>Fri - Sat: 13-01</p>
+          <p>Sun: 13-18</p>
+        </div>
+        <div class="footer-column">
+          <p class="header">Address</p>
+          <p>Kedelpladsen 1</p>
+          <p>1799 København V</p>
+        </div>
+      </div>
+      <div class="footer-column">
+        <p class="header">Contact us</p>
+        <p>E-mail: <a href="mailto:hello@lilli.bar">hello@lilli.bar</a></p>
+      </div>
+      <div class="footer-column">
+        <p class="header">Events</p>
+        <p><a href="/en/events/">Upcoming events</a></p>
+        <p><a href="">Rent Lilli</a></p>
+      </div>
+      <div class="footer-column">
+        <p class="header">The bar</p>
+        <p><a href="/en/about/">Lilli von Kohl</a></p>
+        <p><a href="/en/contact/">Selskaber</a></p>
+        <p>
+          <a
+            href="https://www.instagram.com/lilli_von_kohl/"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://www.facebook.com/profile.php?id=61575620468349"
+            target="_blank"
+            rel="noopener"
+            >Facebook</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="/menu.js"></script>
+  </body>
+</html>

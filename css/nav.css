@@ -38,8 +38,21 @@
   background: url(/img/nav-bg-first.svg);
   position: relative;
   z-index: 100;
+  & .language-changer > a {
+    font-size: 1.5rem;
+    color: var(--green);
+    background-color: var(--creme-hvid);
+    padding: 1rem;
+    border-radius: 24px;
+    border: 2px solid var(--green);
+    text-decoration: none;
+
+    & .bold-link {
+      font-weight: 700;
+    }
+  }
   & > button {
-    opacity: 0;
+    display: none;
   }
   & .nav-logo {
     width: 120px;
@@ -164,6 +177,10 @@
   }
 
   .nav-bar > button {
-    opacity: 1;
+    display: block;
+  }
+
+  .nav-bar .language-changer {
+    display: none;
   }
 }
