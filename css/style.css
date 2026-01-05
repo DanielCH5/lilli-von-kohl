@@ -410,7 +410,20 @@ body {
     transform: rotate(-180deg);
   }
 }
-
+.blue-paper-bg {
+  background: url(/img/ripped-edge-blue.png) 0% 0% repeat;
+  height: 100px;
+  &.rotated {
+    transform: rotate(-180deg);
+  }
+}
+.red-paper-bg {
+  background: url(/img/ripped-edge-red.png) 0% 0% repeat;
+  height: 100px;
+  &.rotated {
+    transform: rotate(-180deg);
+  }
+}
 .table-wrap {
   background: url(/img/table-wrap.svg) 0% 100% / cover;
   padding-bottom: 60px;
@@ -454,6 +467,11 @@ footer {
 
   & a {
     color: inherit;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    &:hover {
+      color: var(--gulorange);
+    }
   }
 }
 
