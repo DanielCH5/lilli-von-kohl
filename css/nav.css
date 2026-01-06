@@ -41,12 +41,16 @@
   & .language-changer > a {
     font-size: 1.5rem;
     color: var(--green);
-    background-color: var(--creme-hvid);
+    background-color: var(--hvid);
     padding: 0.5rem 1rem;
     border-radius: 24px;
     border: 4px solid var(--green);
+    transition: 0.3s ease-in-out;
     text-decoration: none;
-
+    &:hover {
+      background-color: var(--green);
+      color: var(--gulorange);
+    }
     & .bold-link {
       font-weight: 700;
     }
