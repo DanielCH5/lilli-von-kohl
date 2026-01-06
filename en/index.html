@@ -126,6 +126,17 @@
             alt=""
           />
           <img class="drop-image image-fifth" src="/img/bar.jpg" alt="" />
+          <button class="slideshow-btn slideshow-prev" onclick="previousSlide()" aria-label="Previous image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="slideshow-btn slideshow-next" onclick="nextSlide()" aria-label="Next image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+          <div class="slideshow-dots"></div>
         </div>
       </div>
     </header>
@@ -356,6 +367,7 @@
     <script>
       const images = document.querySelectorAll(".drop-image");
       let index = 0;
+      let currentImageIndex = 0;
 
       images.forEach((img, i) => {
         // This line generates a random rotation value between -5 and 5 degrees:
@@ -367,6 +379,7 @@
       function dropNext() {
         if (index >= images.length) {
           clearInterval(dropTimer);
+          initializeSlideshow();
           return;
         }
         images[index].classList.add("drop-image--land");
@@ -383,6 +396,54 @@
           clearInterval(dropTimer);
         }
       }, 1200);
+
+      function initializeSlideshow() {
+        const dotsContainer = document.querySelector(".slideshow-dots");
+        
+        // Create dots for each image
+        images.forEach((_, i) => {
+          const dot = document.createElement("button");
+          dot.className = "slideshow-dot" + (i === 0 ? " active" : "");
+          dot.onclick = (e) => {
+            e.preventDefault();
+            goToSlide(i);
+          };
+          dotsContainer.appendChild(dot);
+        });
+        
+        currentImageIndex = 0;
+        showSlide(0);
+      }
+
+      function showSlide(n) {
+        const dots = document.querySelectorAll(".slideshow-dot");
+        
+        // Set z-index for all images so only the current one shows
+        images.forEach((img, i) => {
+          img.style.zIndex = i === n ? 10 : i;
+        });
+        
+        // Update dots
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("active", i === n);
+        });
+        
+        currentImageIndex = n;
+      }
+
+      function nextSlide() {
+        const nextIndex = (currentImageIndex + 1) % images.length;
+        showSlide(nextIndex);
+      }
+
+      function previousSlide() {
+        const prevIndex = (currentImageIndex - 1 + images.length) % images.length;
+        showSlide(prevIndex);
+      }
+
+      function goToSlide(n) {
+        showSlide(n);
+      }
     </script>
   </body>
 </html>
