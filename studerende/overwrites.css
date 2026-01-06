@@ -27,6 +27,16 @@
     }
   }
 }
+.event-knap.studerende-knap {
+  background-color: var(--gulorange);
+  color: var(--darkblue);
+  border: 4px solid var(--gulorange);
+
+  &:hover {
+    background-color: var(--darkblue);
+    color: var(--gulorange);
+  }
+}
 @media (max-width: 1000px) {
   .polaroid-section {
     flex-direction: column;
