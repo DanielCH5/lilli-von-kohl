@@ -98,17 +98,17 @@
 
   &.event-card-yellow {
     background: var(--gulorange);
-    color: var(--creme-hvid);
+    color: var(--green);
     & .event-date {
-      color: var(--green);
+      color: var(--red);
     }
   }
 
   &.event-card-turkis {
     background: var(--turkis);
-    color: var(--creme-hvid);
+    color: var(--darkblue);
     & .event-date {
-      color: var(--darkblue);
+      color: var(--green);
     }
   }
 
@@ -116,7 +116,7 @@
     background: var(--creme-hvid);
     color: var(--green);
     & .event-date {
-      color: var(--gulorange);
+      color: var(--darkblue);
     }
   }
 
