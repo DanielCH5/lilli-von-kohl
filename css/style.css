@@ -244,7 +244,7 @@ body {
       & .dice {
         transform: rotate(0deg);
         position: absolute;
-        right: -80px;
+        right: -60px;
         bottom: -100px;
       }
       &.right-rotate {
